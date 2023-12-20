@@ -15,7 +15,7 @@ namespace Project_test_2
     {
         private string connstring = String.Format("Host={0};Port={1};" +
                                                   "User Id={2};Password={3};Database={4};",
-                                                  "localhost", 5432, "postgres", "7601", "postgres");
+                                                  "26.226.216.226", 5432, "postgres", "1808", "postgres");
         private NpgsqlConnection conn;
         private string sql;
         private NpgsqlCommand cmd;
@@ -242,6 +242,11 @@ namespace Project_test_2
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             Select();
+        }
+
+        private void dgvListbook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

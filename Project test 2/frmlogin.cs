@@ -65,12 +65,52 @@ namespace Project_test_2
                 txbPassword.Focus();
                 return;
             }
+            if (txbUsername.Text == "anhphucbao" && txbPassword.Text == "123456")
+            {
+                MessageBox.Show("Login Successfully", "Notice", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                if (txbUsername.Text != "anhphucbao")
+                {
+                    MessageBox.Show("Wrong username", "Warning");
+                    txbUsername.Focus();
+                    return;
+                }
+                if (txbPassword.Text != "123456")
+                {
+                    MessageBox.Show("Wrong Password", "Warning");
+                    txbPassword.Focus();
+                    return;
+                }
+
+            }
             frmworkingspace fws = new frmworkingspace();
             this.Close();
             fws.Show();                      
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbUsername_Click(object sender, EventArgs e)
         {
 
         }
